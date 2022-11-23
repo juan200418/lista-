@@ -1,0 +1,21 @@
+def llenar (lista,tamaño):
+    for i in range(tamaño):
+        j=str(input("ingrese palabras : "))
+        
+
+        lista.append(j)
+        
+    return lista
+def buscar (lista,busqueda):
+    cont=0
+    for i in range (len(lista)):
+        if lista [i]==busqueda:
+            cont=cont+1
+    return cont 
+
+if __name__=="__main__":
+    lista=[]
+    x = llenar(lista,5)
+    print (x)
+    b= buscar (lista,"moto ")
+    print(b)
